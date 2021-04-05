@@ -1,55 +1,189 @@
+/* Every element = no margin or border unless explicitly told so */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ignore padding in the over width */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 18px;
-    line-height: 150%;
-    color: #333;
-    background: #efeee7;
-  }
-  
-  header {
-    background: #333;
-  }
-  
-  h1 {
-    padding: 20px 0;
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #eee;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 24px;
-  }
-  
-  a {
-    color: #d21034;
-  }
-  
-  .container {
-    width: 1024px;
-    margin: 0 auto;
-  }
-  
-  #main-bio,
-  #contact-info,
-  #bio-image {
-    float: left;
-  }
-  
-  #main-bio {
-    width: 70%;
-  }
-  
-  #contact-info {
-    width: 30%;
-  }
-  
-  #bio-image {
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
-  }
+  /* more on this crazy alphanumerical value in a minute! */
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header & Footer Styling */
+
+header {
+  padding: 50px 75px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 54px;
+  color: #000000;
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: #000000;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
+
+footer {
+  background: #fefefe;
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer h2 {
+  color: #000000;
+  font-size: 20px;
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: #024e76;
+}
+
+section {
+  padding: 60px;
+}
+
+/* Hero Style Start */
+.hero {
+  background-image: url("./Images/pexels-markus-spiske-965345.jpg");
+  height: 50px;
+}
+
+/* Hero Style End */
+
+/* About Me Section */
+
+.about-me h2 {
+  font-size: 44px;
+  color: #000000;
+  margin-bottom: 10px;
+  padding: 0 100px 20px 100px;
+  text-align: right;
+}
+
+.about-me p {
+  line-height: 1.7;
+  color: #000000;
+  width: 80%;
+  font-size: 20px;
+  text-align: right;
+}
+
+.about-me p {
+  margin: 0 auto;
+  border: 3px; 
+  padding: 10px;
+  width: 40%;
+
+}
+
+.headshot-image {
+  background-image: url("./Images/Seve Barrutia Headshot.jpg");
+  padding: 100px;
+  width: 30%;
+  margin: 3.5%;
+
+/* Work Section */
+
+.section-title {
+  font-size: 55px;
+    color: #024e76;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: left;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.projects {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  margin: 0 auto 20px auto;
+  background: #024e76;
+  color: #fce138;
+  flex: 1;
+}
+
+.project img {
+  width: 100%;
+  overflow: auto;
+}
+
+.project-bio {
+  padding: 25px;
+  line-height: 1.3;
+}
+
+.project-bio h3 {
+  font-size: 28px;
+}
+
+.project-bio p {
+  font-size: 17px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-row {
+  display: flex;
+}
