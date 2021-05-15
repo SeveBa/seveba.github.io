@@ -127,9 +127,11 @@ section {
 
 .headshot-image {
   background-image: url("./Images/Seve Barrutia Headshot.jpg");
+  background-repeat: no-repeat;
   padding: 100px;
   width: 30%;
   margin: 3.5%;
+}
 
 /* Work Section */
 
